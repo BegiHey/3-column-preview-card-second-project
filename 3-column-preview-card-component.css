@@ -1,0 +1,134 @@
+:root {
+    /* Primary */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Created a box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Transparent-white);
+    background: var(--Very-light-gray);
+    font-size: 15px;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 12%;
+}
+
+img {
+    margin-bottom: 0.5rem;
+}
+.card {
+    width: 110%;
+    padding: 3rem;
+}
+.card-title {
+    padding-top: 2.3rem;
+    padding-bottom: 2.2rem;
+    font-size:  36px;
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: var(--Very-light-gray);
+    line-height: 1.6;
+}
+
+.card-sedan {
+    background-color: var(--Bright-orange);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.card-luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+button {
+   background-color: var(--Very-light-gray);
+   height: 3rem;
+   width: 9rem;
+   border-radius: 10rem;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3rem;
+   margin-bottom: 0.5rem;
+   outline: none;
+   border: 2px solid var(--neu-gray);
+   cursor: pointer;
+   font-size: 12px;
+}
+
+a {
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+.link-sedan{
+    color: var(--Bright-orange);
+    text-decoration: none;
+}
+.link-suvs{
+    color: var(--Dark-cyan);
+    text-decoration: none;
+}
+.link-luxury{
+    color: var(--Very-dark-cyan);
+    text-decoration: none;
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--Very-dark-cyan); }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 765px) {
+    .container {
+        display: flex;
+        width: auto;
+        align-items: stretch;
+        justify-content: space-evenly;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+   main {
+       margin: 2rem;
+       padding: 2rem;
+       box-sizing: border-box;
+   }
+
+.card-sedan {
+      border-radius: 0.5rem 0 0 0.5rem;
+} 
+
+ .card-luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+ }
+}
